@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador Challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.svg" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedorCajaTexto">
+                <textarea placeholder="Ingrese El Texto Aqui" class="cajaTexto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="Imagenes/alerta.svg" alt="icono de alerta color gris">
+                <p>Solo letras minusculas sin acentos.</p>
+            </div>
+            <div class="contenedorBotones">
+                <input type="button" class="botonEncriptador" value="Encriptar">
+                <input type="button" class="botonDesencriptador" value="Desencriptar">
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedorPersonaje">
+                <img src="Imagenes/personaje.svg" alt="personaje con lupa">
+            </div>
+            <div class="contenedorTextoEncriptado">
+                <h3>Ningun mensaje fue<br> encontrado.</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedorParaCopiar">
+                <input type="button" class="botonCopiar" value="Copiar">
+            </div>
+            <div class="contenedorDelResultado">
+                <p class="resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="logica.js"></script>
+</body>
+</html>
